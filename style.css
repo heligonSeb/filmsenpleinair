@@ -1,0 +1,423 @@
+/***********
+*
+*       Global
+*
+************/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+.nav_global {
+    display: flex;
+    padding: 1% 2% 1% 2%;
+    justify-content: space-between;
+}
+
+.nav_global ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_global ol li {
+    padding-bottom: 5px;
+}
+
+.nav_global ol li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px 0px 5px;
+}
+
+.nav_global ol li a:hover {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 4px 0px 4px;
+}
+
+#active-page {
+    border-bottom: 1px solid white;
+}
+
+
+footer {
+    background-color: rgb(29, 29, 29);
+    color : white;
+}
+
+.nav_global_connexion_acessi a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_global_connexion_acessi a:first-child {
+    margin-right: 10px;
+}
+
+
+/***** SECTION FOOTER *****/
+
+
+
+/***********
+*
+*       Page Accueil
+*
+************/
+#header-home {
+    background-image: url("./pictures/background_accueil_titre.jpg");
+    background-size: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    background-repeat: no-repeat;
+    height: 70rem;
+    background-blend-mode: color;
+}
+
+.section_accueil {
+    width: 80%;
+    margin: auto;
+}
+
+#header-home .intro_acceuil {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color : white;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+
+.intro_acceuil h1 {
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+.intro_acceuil p {
+    font-size: 1.5rem;
+}
+
+
+
+
+/***** SECTION FILM PROGRAMME *****/
+#program-film {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    top: -100px;
+}
+
+.card_film_wrap {
+    width: 33.33%;
+    padding: 10px ;
+}
+
+.card_film_in {
+    background-color: black;
+}
+
+.card_film {
+    height: 250px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color:white;
+    box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color:  rgb(0 0 0 / 50%);
+    background-blend-mode: color;
+    position: relative;
+}
+
+.card_film_content_wrap {
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_film .card_film_program {
+    margin-top: 0px;
+    width: 40%;
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.card_film .film_title {
+    font-size: 3rem;
+    padding: 0px 10px;
+}
+
+.film_resume {
+    display: none;
+}
+
+.card_film_wrap:hover .card_film {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_film_wrap:hover .film_title{
+    display: none;
+}
+
+.card_film_wrap:hover .film_resume{
+    display: block;
+    width: 100%;
+    padding: 0px 10px;
+    margin-top: 5%;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+
+/***** Affiche film *****/
+#film-enterthevoid {
+    background-image: url("./pictures/films/Enter_the_Void.jpg");
+}
+
+#film-deadman {
+    background-image: url("./pictures/films/Dead_Man.jpg");
+}
+
+#film-holymotors {
+    background-image: url("./pictures/films/Holy_Motors.jpg");
+}
+
+#film-voldessusnidcoucou {
+    background-image: url("./pictures/films/Vol_au_dessus_d_un_nid_de_coucou.jpg");
+}
+
+#film-eraserhead {
+    background-image: url("./pictures/films/Eraserhead.jpg");
+}
+
+#film-guerriersilencieux {
+    background-image: url("./pictures/films/Le_Guerrier_silencieux_Valhalla_Rising.jpg");
+}
+
+#film-enemy {
+    background-image: url("./pictures/films/Enemy.jpg");
+}
+
+#film-melancholia {
+    background-image: url("./pictures/films/melancholia.jpg");
+}
+
+
+
+.title_actu,
+.newsletter_title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.card_actu_button,
+.newsletter_formulaire_button {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 5px 0px;
+    border-radius: 20px;
+    background-color: red;
+    border: 1px solid red;
+    color:white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.card_actu_button:hover,
+.newsletter_formulaire_button:hover {
+    border: 1px solid red;
+    background-color: white;
+    color:red;
+}
+
+
+/***** SECTION ACTU *****/
+.card_actu_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.card_actu {
+    width: 40%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.card_actu_img_wrap{
+    overflow: hidden;
+}
+
+.card_actu_img {
+    width: 100%;
+    transition:  transform 0.5s ease;
+}
+
+.card_actu_title {
+    border-bottom: 1px solid black;
+    padding: 5px 0px;
+    margin: 0px;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.card_actu_resume {
+    padding: 5px 10px;
+}
+
+.card_actu_button .fas {
+    padding-right: 10px;
+}
+
+.card_actu:hover .card_actu_img{
+    transform: scale(1.1);
+}
+
+
+
+/***** SECTION NEWSLETTER *****/
+#newsletter,
+.mewsletter_formulaire {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.newsletter_title {
+    padding-top: 3rem;
+}
+
+.newsletter_formulaire {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.newsletter_formulaire_inputmail {
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+    width: 100%;
+    padding: 5px 0px 5px 50px;
+}
+
+.newsletter_formulaire i {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    position: absolute;
+    left: 8px;
+    top: 9px;
+    padding-right: 8px;
+    border-right: 1px solid black;
+
+}
+
+.newsletter_formulaire_button {
+    width: 25%;
+}
+
+.newsletter_formulaire_inputmail:focus {
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** RESPONSIVE *****/
+@media screen and (max-width: 1620px) {
+    #header-home {
+        height: 56rem;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    #header-home {
+        height: 46rem;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+    #header-home {
+        height: 40rem;
+    }
+}
+
+
+
+
+/***********
+*
+*       Page liste Actualités
+*
+************/
+
+
+
+/***********
+*
+*       Page article Actu
+*
+************/
+
+
+
+/***********
+*
+*       Page Film
+*
+************/
+
+
+
+
+/***********
+*
+*       Page Contact
+*
+************/
