@@ -506,6 +506,114 @@ body{
 *       Page liste Actualités
 *
 ************/
+#header-actu {
+    background-image: url("./pictures/background_actu.jpg");
+    background-size: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-blend-mode: color;
+}
+
+#page-actu {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section_actu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.section_actu .card_actu_wrap {
+    display: block;
+    width: 25%;
+    padding: 10px;
+}
+
+.section_actu .card_actu {
+    width: 100%;
+}
+
+.pagination_wrap {
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+}
+
+.pagination_in {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_number {
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.page_number_actif {
+    color: black;
+}
+
+.page_number:hover .page_number_bar{
+    border-bottom: 2px solid gray;
+}
+
+.page_number_actif:hover .page_number_bar{
+    border-bottom: 2px solid black;
+}
+
+.page_bar,
+.page_number {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.page_bar {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position : relative
+}
+
+.half_bar {
+    border: 1px solid black;
+    width: 20%;
+}
+
+.half_bar_left {
+    transform-origin: left;
+}
+
+.half_bar_right {
+    transform-origin: right;
+}
+
+.half_bar_top {
+    transform: rotate(-30deg);
+    position: absolute;
+    top:0.5px;
+}
+
+.half_bar_bottom {
+    transform: rotate(30deg);
+}
+
+.page_bar:hover .half_bar_top {
+    transform: rotate(-20deg);
+}
+
+.page_bar:hover .half_bar_bottom {
+    transform: rotate(20deg);
+}
+
+
 
 
 
@@ -514,6 +622,50 @@ body{
 *       Page article Actu
 *
 ************/
+#header-article-actu {
+    background-image: url("./pictures/actu3.jpeg");
+    background-size: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    background-repeat: no-repeat;
+    height: 40rem;
+    background-blend-mode: color;
+}
+
+#page_article_actu {
+    padding-bottom: 5%;
+}
+
+.back_actu_wrap {
+    padding: 20px;
+    font-size: 1.5rem;
+    
+}
+
+.back_actu_link {
+    text-decoration: none;
+    color : gray;
+    padding-left: 2%;
+}
+
+.back_actu_link:hover {
+    color : black;
+}
+
+.back_actu_link .fas {
+    padding-right: 10px;
+}
+
+.article_actu_source {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    align-items: baseline;
+}
+
+.article_actu_source_date {
+    font-style: italic;
+    font-size: 0.9rem;
+}
 
 
 
@@ -522,9 +674,90 @@ body{
 *       Page Film
 *
 ************/
+/****  SECTION INFO FILM  ****/
+#header-film .nav_global_ol_li_a,
+#header-film .nav_global_connexion_acessi_link .fas {
+    color : black;
+}
+
+#header-film .nav_global_ol_li_a:hover {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#section-film {
+    padding-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section_film_info {
+    padding-left: 50px;
+}
+
+.section_film_info_title {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+.section_film_info_actor,
+.section_film_info_rea {
+    margin: 0px;
+    font-style: italic;
+}
+
+.section_film_info_bold {
+    font-weight: 900;
+}
+
+.section_film_info_ressume {
+    padding-top: 40px;
+}
 
 
+/*** SECTION RESERVATION ***/
+#section-resa {
+    padding-top: 2%;
+}
 
+.section_resa_title {
+    font-size: 2rem;
+}
+
+.section_resa_reserver {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.section_resa_reserver_date {
+    margin: 0px;
+}
+
+.section_resa_reserver_button {
+    background-color: red;
+    color:white;
+    font-weight: 900;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-size: medium;
+    padding: 5px 25px;
+}
+
+
+.section_resa_reserver_button:hover {
+    background-color: white;
+    color:red;
+    border: 2px solid red;
+}
+
+.section_resa_reserver_button .fas {
+    padding-right: 5px;
+}
 
 /***********
 *
@@ -641,11 +874,69 @@ body{
 
 
 
+/***********
+*
+*       Page ACCESIBILITE
+*
+************/
+
+#acces-typo,
+#acces-header {
+    display: flex;
+    justify-content: center;
+}
 
 
+/**** TYPO *****/
+.typo_choice,
+.typo_size_plus,
+.typo_size_moins {
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: black;
+}
 
+.typo_brown {
+    color: white;
+    background-color: rgb(119, 95, 58);
+    border: 1px solid rgb(119, 95, 58);
+}
 
+.typo_yellow {
+    background-color: rgb(223, 200, 25);
+    border: 1px solid rgb(223, 200, 25);
+}
 
+.typo_actif {
+    text-decoration: underline;
+}
+
+.typo_size_plus,
+.typo_size_moins {
+    border: none;
+    font-size: 1.6rem;
+    padding: 10px 0px;
+    margin : 5px 0px
+}
+
+/**** HEADER *****/
+#acces-header {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.acces_header_title {
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
 
 
 

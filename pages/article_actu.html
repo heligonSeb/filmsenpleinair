@@ -4,55 +4,57 @@
         <meta charset="utf-8">
         <title>Film en plein air</title>
         <link rel="icon" type="image/x-icon" href="../pictures/logo.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <script src="https://kit.fontawesome.com/46415a6d27.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <nav>
-            <img src="../pictures/logo.png" alt="logo films de plein air" style="width: 60px;">
-        
-            <ol>
-                <li>
-                    <a href="../index.html">Accueil</a>
-                </li>
+        <header id="header-article-actu">
+            <nav class="nav_global">
+                <img src="../pictures/logo.png" alt="logo films de plein air" style="width: 60px;">
+            
+                <ol class="nav_global_ol">
+                    <li class="nav_global_ol_li">
+                        <a class="nav_global_ol_li_a" href="../index.html">Accueil</a>
+                    </li>
 
-                <li>
-                    <a href="./actu.html">Actualité</a>
-                </li>
+                    <li class="nav_global_ol_li">
+                        <a class="nav_global_ol_li_a" href="./actu.html">Actualité</a>
+                    </li>
 
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ol>
+                    <li class="nav_global_ol_li">
+                        <a class="nav_global_ol_li_a" href="./contact.html">Contact</a>
+                    </li>
+                </ol>
 
-            <div>
-                <a href="./accessiblite.html">
-                    <i class="fas fa-eye-slash"></i>
-                </a>
+                <div class="nav_global_connexion_acessi">
+                    <a class="nav_global_connexion_acessi_link nav_global_connexion_acessi_eye" href="./accessiblite.html">
+                        <i class="fas fa-eye-slash"></i>
+                    </a>
 
-                <a href="./login.html">
-                    <i class="fas fa-user"></i>
-                </a>
+                    <a class="nav_global_connexion_acessi_link" href="./login.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="intro_page">
+                <h1 class="intro_page_title">Une actualité</h1>
             </div>
-        </nav>
-
-        <header>
-            <h1>Une actualité</h1>
         </header>
 
-        <div>
-            <a href="../index.html">
+        <div class="back_actu_wrap">
+            <a class="back_actu_link" href="./actu.html">
                 <i class="fas fa-arrow-left"></i>
                 Retour
             </a>
         </div>
 
-        <section>
-            <div>
-                <p>actu écrie par ...</p>
+        <section id="page_article_actu" class="section_page">
+            <div class="article_actu_source">
+                <p>Article écrit par Zombie ipsum reversus ab </p>
 
-                <span>la date de l'actu</span>
+                <span class="article_actu_source_date">le 28 mars 2021</span>
             </div>
 
             <p>
@@ -73,43 +75,79 @@
         </section>
 
 
-        <footer>
-            <section>
-                <h4>Dernière arctualité</h4>
+        <footer class="footer">
+            <section class="footer_last_actu">
+                <h4 class="footer_title">Dernière arctualité</h4>
 
-                <h5>article 03</h5>
+                <div class="footer_last_actu_content">
+                    <div class="footer_last_actu_content_header">
+                        <img class="footer_last_actu_content_img" src="../pictures/actu3.jpeg" alt="illustration actualitée 3">
+                        
+                        <div class="footer_last_actu_content_title">
+                            <h5 class="footer_soustitle">Actualité 03</h5>
+        
+                            <p>
+                                Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z?
+                            </p>
 
-                <p>
-                    Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z?
-                </p>
+                            <a class="footer_button" href="./article_actu.html">
+                                <i class="fas fa-eye"></i>
+                                Voir
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
             </section>
 
-            <nav>
-                <ol>
-                    <li>
-                        <a href="../index.html">Accueil</a>
+            <nav class="footer_nav">
+                <h4 class="footer_title">Menu</h4>
+
+                <ol class="footer_nav_ol">
+                    <li class="footer_nav_ol_li">
+                        <a class="footer_nav_ol_li_a" href="../index.html">Accueil</a>
                     </li>
     
-                    <li>
-                        <a href="./actu.html">Actualité</a>
+                    <li class="footer_nav_ol_li">
+                        <a class="footer_nav_ol_li_a" href="./actu.html">Actualité</a>
                     </li>
     
-                    <li>
-                        <a href="./contact.html">Contact</a>
+                    <li calass="footer_nav_ol_li">
+                        <a class="footer_nav_ol_li_a" href="./contact.html">Contact</a>
                     </li>
                 </ol>
             </nav>
 
-            <section>
-                <h4>Prochain film diffusé</h4>
+            <section class="footer_next_film">
+                <h4 class="footer_title">Prochain film diffusé</h4>
 
-                <h5>Enter the Void</h5>
+                <div>
+                    <div class="footer_next_film_header">
+                        <img class ="footer_next_film_header_img" src="../pictures/films/Enter_the_Void_affiche.jpg" alt="affiche du film enter the void">
 
-                <p>le 5 août à 18h00</p>
+                        <div class="footer_next_film_header_content">
+                            <div class="footer_next_film_header_content_head">
+                                <a class="footer_next_film_header_content_head_a" href="./film.html">
+                                    <h5 class="footer_soustitle">Enter the Void</h5>
+                                </a>
 
-                <p>
-                    Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z? adventus. Shaun Narcisse clairvius mauris organa Undead, accedunt dark iride carnis Apocalypsi, et viral survival shotgun. Maleficia?
-                </p>
+                                <p class="footer_next_film_header_content_head_p">le 5 août à 18h00</p>
+                            </div>
+
+                            <div class="footer_next_film_header_content_info">
+                                <p class="footer_next_film_header_content_info_p"><span class="footer_next_film_header_content_info_span">film de :</span> Gaspar Noé</p>
+                                
+                                <p class="footer_next_film_header_content_info_p"><span class="footer_next_film_header_content_info_span">Drame, fantastique et expérimental</span></p>
+                                
+                                <p class="footer_next_film_header_content_info_p"><span class="footer_next_film_header_content_info_span">Avec</span> Paz de la Huerta, Nathaniel Brow, Cyril Roy</p>
+                            </div>
+
+                            <p>
+                                Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z? adventus. Shaun Narcisse clairvius mauris organa Undead, accedunt dark iride carnis Apocalypsi, et viral survival shotgun. Maleficia?
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </footer>
     </body>

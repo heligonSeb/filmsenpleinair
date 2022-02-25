@@ -4,105 +4,146 @@
         <meta charset="utf-8">
         <title>Film en plein air</title>
         <link rel="icon" type="image/x-icon" href="../pictures/logo.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <script src="https://kit.fontawesome.com/46415a6d27.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <nav>
-            <img src="../pictures/logo.png" alt="logo films de plein air" style="width: 60px;">
-        
-            <ol>
-                <li>
-                    <a href="../index.html">Accueil</a>
-                </li>
-
-                <li>
-                    <a href="./actu.html">Actualité</a>
-                </li>
-
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ol>
-
-            <div>
-                <a href="./accessiblite.html">
-                    <i class="fas fa-eye-slash"></i>
-                </a>
-
-                <a href="./login.html">
-                    <i class="fas fa-user"></i>
-                </a>
-            </div>
-        </nav>
-
-        <section>
-            <img src="" alt="image du film">
+        <header id="header-film">
+            <nav class="nav_global">
+                <img src="../pictures/logo.png" alt="logo films de plein air" style="width: 60px;">
             
-            <div>
-                <h1>Film</h1>
+                <ol class="nav_global_ol">
+                    <li class="nav_global_ol_li">
+                        <a class="nav_global_ol_li_a" href="../index.html">Accueil</a>
+                    </li>
+    
+                    <li class="nav_global_ol_li">
+                        <a class="nav_global_ol_li_a" href="./actu.html">Actualité</a>
+                    </li>
+    
+                    <li class="nav_global_ol_li">
+                        <a class="nav_global_ol_li_a" href="./contact.html">Contact</a>
+                    </li>
+                </ol>
+    
+                <div class="nav_global_connexion_acessi">
+                    <a class="nav_global_connexion_acessi_link nav_global_connexion_acessi_eye" href="./accessiblite.html">
+                        <i class="fas fa-eye-slash"></i>
+                    </a>
+    
+                    <a class="nav_global_connexion_acessi_link" href="./login.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
 
-                <div>
-                    <p><span>Acteur: </span> Zombie ipsum, reversus ab, viral inferno, rick incipere, vivos sacerdos.</p>
-                    <p><span>Realisateur: </span> Zombie ipsum.</p>
+        <section id="section-film" class="section_page">
+            <img src="../pictures/films/Dead_Man_affiche.jpg" alt="image du film">
+            
+            <div class="section_film_info">
+                <h1 class="section_film_info_title">Film</h1>
+
+                <div class="section_film_info_who">
+                    <p class="section_film_info_actor"><span class="section_film_info_bold">Acteur: </span> Zombie ipsum, reversus ab, viral inferno, rick incipere, vivos sacerdos.</p>
+                    <p class="section_film_info_rea"><span class="section_film_info_bold">Realisateur: </span> Zombie ipsum.</p>
                 </div>
 
-                <p>
+                <p class="section_film_info_ressume"> 
                     Zombie ipsum reversus ab viral inferno nam, rick incipere vivos sacerdos memoria, Undead virus creepy infecti virus. Wal super unholy solum Zombie Kirkman undead sint, brid Nescio zomby max daze mindless, currere mortuum serpere lumbering virus soulless. Deformis omni rick violent a animated brains infect sepulcris brains viscera vel, vel zombie et Panduntur shotgun biehig zombi corpses cricket daze.
                 </p>
             </div>
         </section>
 
-        <section>
-            <h2>Date de projection</h2>
+        <section id="section-resa" class="section_page">
+            <h2 class="section_resa_title">Date de projection</h2>
 
-            <div>
-                <p>
-                    La date 00 00 0000
+            <div class="section_resa_reserver">
+                <p class="section_resa_reserver_date">
+                    La date 00 aôut 0000
                 </p>
 
-                <button name="reservation" type="button">Réserver</button>
+                <button class="section_resa_reserver_button" name="reservation" type="button">
+                    <i class="fas fa-calendar-check"></i>
+                    Réserver
+                </button>
             </div>
         </section>
 
-        <footer>
-            <section>
-                <h4>Dernière arctualité</h4>
+        <footer class="footer">
+            <section class="footer_last_actu">
+                <h4 class="footer_title">Dernière arctualité</h4>
 
-                <h5>article 03</h5>
+                <div class="footer_last_actu_content">
+                    <div class="footer_last_actu_content_header">
+                        <img class="footer_last_actu_content_img" src="../pictures/actu3.jpeg" alt="illustration actualitée 3">
+                        
+                        <div class="footer_last_actu_content_title">
+                            <h5 class="footer_soustitle">Actualité 03</h5>
+        
+                            <p>
+                                Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z?
+                            </p>
 
-                <p>
-                    Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z?
-                </p>
+                            <a class="footer_button" href="./article_actu.html">
+                                <i class="fas fa-eye"></i>
+                                Voir
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
             </section>
 
-            <nav>
-                <ol>
-                    <li>
-                        <a href="../index.html">Accueil</a>
+            <nav class="footer_nav">
+                <h4 class="footer_title">Menu</h4>
+
+                <ol class="footer_nav_ol">
+                    <li class="footer_nav_ol_li">
+                        <a class="footer_nav_ol_li_a" href="../index.html">Accueil</a>
                     </li>
     
-                    <li>
-                        <a href="./actu.html">Actualité</a>
+                    <li class="footer_nav_ol_li">
+                        <a class="footer_nav_ol_li_a" href="./actu.html">Actualité</a>
                     </li>
     
-                    <li>
-                        <a href="./contact.html">Contact</a>
+                    <li calass="footer_nav_ol_li">
+                        <a class="footer_nav_ol_li_a" href="./contact.html">Contact</a>
                     </li>
                 </ol>
             </nav>
 
-            <section>
-                <h4>Prochain film diffusé</h4>
+            <section class="footer_next_film">
+                <h4 class="footer_title">Prochain film diffusé</h4>
 
-                <h5>Enter the Void</h5>
+                <div>
+                    <div class="footer_next_film_header">
+                        <img class ="footer_next_film_header_img" src="../pictures/films/Enter_the_Void_affiche.jpg" alt="affiche du film enter the void">
 
-                <p>le 5 août à 18h00</p>
+                        <div class="footer_next_film_header_content">
+                            <div class="footer_next_film_header_content_head">
+                                <a class="footer_next_film_header_content_head_a" href="./film.html">
+                                    <h5 class="footer_soustitle">Enter the Void</h5>
+                                </a>
 
-                <p>
-                    Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z? adventus. Shaun Narcisse clairvius mauris organa Undead, accedunt dark iride carnis Apocalypsi, et viral survival shotgun. Maleficia?
-                </p>
+                                <p class="footer_next_film_header_content_head_p">le 5 août à 18h00</p>
+                            </div>
+
+                            <div class="footer_next_film_header_content_info">
+                                <p class="footer_next_film_header_content_info_p"><span class="footer_next_film_header_content_info_span">film de :</span> Gaspar Noé</p>
+                                
+                                <p class="footer_next_film_header_content_info_p"><span class="footer_next_film_header_content_info_span">Drame, fantastique et expérimental</span></p>
+                                
+                                <p class="footer_next_film_header_content_info_p"><span class="footer_next_film_header_content_info_span">Avec</span> Paz de la Huerta, Nathaniel Brow, Cyril Roy</p>
+                            </div>
+
+                            <p>
+                                Zombie ipsum reversus ab viral inferno nam rick monstra, staggering comedat corpse agite z? adventus. Shaun Narcisse clairvius mauris organa Undead, accedunt dark iride carnis Apocalypsi, et viral survival shotgun. Maleficia?
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </footer>
     </body>
